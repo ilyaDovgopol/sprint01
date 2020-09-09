@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+}
+
+input[type='text'] {
+  width: 100%;
+}
+
+input[type='text'],
+button[type='submit'] {
+  box-sizing: border-box;
+  color: green;
+  font-size: 12px;
+  height: 2em;
+  padding: 0 10px;
+}
+
+input[type='text']:hover,
+button[type='submit']:hover {
+  color: red;
+}
