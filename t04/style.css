@@ -1,0 +1,38 @@
+:root {
+  --spacing: 23vw;
+}
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.japan {
+  border: 2px solid lightgrey;
+  height: 33.3vw;
+  position: relative;
+  width: 50vw;
+}
+
+.japan::before {
+  background-color: red;
+  border-radius: 50%;
+  content: '';
+  height: var(--spacing);
+  left: calc(100vw - 75vw - var(--spacing));
+  position: absolute;
+  top: 25%;
+  width: var(--spacing);
+}
