@@ -3,7 +3,8 @@
 }
 
 input[type='text'] {
-  width: 100%;
+  flex-grow: 1;
+  margin-right: 0;
 }
 
 input[type='text'],
