@@ -1,0 +1,33 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 1.6rem Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-image: linear-gradient()
+  border-radius: 5px;
+  display: flex;
+  height: 140px;
+  width: 270px;
+}
+
+img {
+  height: 182px;
+  margin-right: auto;
+}
