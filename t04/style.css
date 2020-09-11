@@ -1,5 +1,7 @@
 :root {
-  --spacing: 23vw;
+  --before-size: calc(var(--japan-width) / 2.5);
+  --japan-height: calc(var(--japan-width) / 1.48);
+  --japan-width: 23vw;
 }
 
 html {
@@ -21,18 +23,18 @@ body {
 
 .japan {
   border: 2px solid lightgrey;
-  height: 33.3vw;
+  height: var(--japan-height);
   position: relative;
-  width: 50vw;
+  width: var(--japan-width);
 }
 
 .japan::before {
   background-color: red;
   border-radius: 50%;
   content: '';
-  height: var(--spacing);
-  left: calc(100vw - 75vw - var(--spacing));
+  height: var(--before-size);
+  left: calc(var(--japan-width) / 2 - var(--before-size) / 1.98);
   position: absolute;
-  top: 25%;
-  width: var(--spacing);
+  top: calc(var(--japan-height) / 2 - var(--before-size) / 1.96);
+  width: var(--before-size);
 }
