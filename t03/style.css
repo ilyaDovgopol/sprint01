@@ -20,8 +20,10 @@ body {
 }
 
 input[type='text'] {
+  border-radius: 0.3rem;
+  border: 0.2rem solid blue;
   flex-grow: 1;
-  margin-right: 0;
+  outline: none;
 }
 
 input[type='text'],
@@ -29,6 +31,7 @@ button[type='submit'] {
   color: green;
   font-size: 1.2rem;
   height: 2em;
+  margin: 0;
   padding: 0 1rem;
 }
 
