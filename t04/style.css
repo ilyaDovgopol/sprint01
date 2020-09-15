@@ -22,7 +22,7 @@ body {
 }
 
 .japan {
-  border: 2px solid lightgrey;
+  border: calc(var(--japan-width) / 152) solid lightgrey;
   height: var(--japan-height);
   position: relative;
   width: var(--japan-width);
