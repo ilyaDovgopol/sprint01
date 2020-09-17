@@ -19,16 +19,16 @@ body {
   display: flex;
 }
 
-input[type='text'] {
+.search-input {
   border: 0.2rem solid blue;
   border-radius: 0.3rem;
   flex-grow: 1;
   margin-right: 0;
-  outline: none;
+  outline: 0;
 }
 
-input[type='text'],
-button[type='submit'] {
+.search-input,
+.submit-button {
   color: green;
   font-size: 1.3rem;
   height: 2em;
@@ -36,11 +36,11 @@ button[type='submit'] {
   padding-right: 1rem;
 }
 
-input[type='text']:hover,
-button[type='submit']:hover {
+.search-input:hover,
+.submit-button:hover {
   color: red;
 }
 
-button[type='submit'] {
+.submit-button {
   margin-left: 0;
 }

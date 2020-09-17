@@ -17,6 +17,9 @@ body {
 
 h1 {
   background: red;
+  height: 14.7rem;
+  overflow-y: hidden;
+  padding-top: 3.1rem;
   text-align: center;
 }
 
