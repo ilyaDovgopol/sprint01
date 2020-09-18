@@ -17,13 +17,16 @@ body {
 
 h1 {
   background: red;
-  height: 14.7rem;
+  height: 14.9rem;
   overflow-y: hidden;
-  padding-top: 3.1rem;
+  padding-top: 7rem;
   text-align: center;
 }
 
 span {
   color: white;
+  display: inline-block;
   font-size: 4em;
+  line-height: 0;
+  vertical-align: bottom;
 }
