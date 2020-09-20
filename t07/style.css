@@ -1,0 +1,26 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.image {
+  display: block;
+  margin: 7.5rem auto;
+  transition: all 1s ease-in-out;
+}
+
+.image:hover {
+  transform: rotate(-30deg);
+}
