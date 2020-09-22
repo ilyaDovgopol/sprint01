@@ -17,16 +17,12 @@ body {
 
 .table {
   border-collapse: collapse;
+  text-align: center;
 }
 
 .thead-tr {
   background: black;
   color: white;
-}
-
-.tbody,
-.tfoot {
-  text-align: center;
 }
 
 .tbody-tr:nth-child(1) {
