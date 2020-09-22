@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Superhero application</title>
+  <meta name="description" content="t09. Superhero application">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Superhero Form</h1>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>About the Superhero</legend>
+      <div>
+        <label for="name">Real Name</label><input type="text" name="name" id="name" placeholder="Superhero real name" required autofocus>
+        <label for="alias">Superhero Name</label><input type="text" name="alias" id="alias" placeholder="Superhero alias" required>
+        <label for="age">Age</label><input type="number" name="age" id="age" min="1" max="999" step="1" required>
+      </div>
+      <div>
+        <label for="about">About</label><textarea name="about" rows="5" cols="70" maxlength="500" id="about" placeholder="Information about the superhero, max 500 symbols" required></textarea>
+      </div>
+      <div>
+        <label for="photo">Photo:</label><input type="file" name="photo" accept="/*" multiple>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>
