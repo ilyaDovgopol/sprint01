@@ -19,6 +19,7 @@ body {
   background: linear-gradient(to right, #6e0000, antiquewhite);
   border: .4rem solid black;
   border-collapse: collapse;
+  text-align: center;
 }
 
 .thead-tr {
@@ -30,8 +31,13 @@ body {
   padding: 1rem;
 }
 
+.th,
 .td {
-  text-align: center;
+  border: .2rem solid rgba(189, 195, 199, .05);
+}
+
+.td {
+  padding: .5rem 5rem;
 }
 
 .td:first-child {
@@ -39,12 +45,20 @@ body {
   font-weight: bold;
 }
 
-.tr:nth-child(even) .td:first-child {
+.tbody-tr:nth-child(even) .td:first-child {
   background: rgba(143, 148, 251, .1);
 }
 
 .td ~ .td {
   background: antiquewhite;
   color: midnightblue;
-  padding: .5rem 5rem;
+}
+
+.td.false-100 {
+  background: darkred;
+}
+
+.td.false-100,
+.a {
+  color: white;
 }
