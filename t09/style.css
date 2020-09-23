@@ -1,0 +1,30 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.form {
+  border: .2rem solid grey;
+  padding: 2rem;
+}
+
+.div {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.outline {
+  outline: 0;
+}

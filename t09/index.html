@@ -10,21 +10,50 @@
 
 <body>
   <h1>Superhero Form</h1>
-  <form action="#" method="post">
+  <form class="form" action="#" method="post" target="top" enctype="multipart/form-data" oninput="controloutput.value=controllevel.value">
     <fieldset>
       <legend>About the Superhero</legend>
-      <div>
-        <label for="name">Real Name</label><input type="text" name="name" id="name" placeholder="Superhero real name" required autofocus>
-        <label for="alias">Superhero Name</label><input type="text" name="alias" id="alias" placeholder="Superhero alias" required>
-        <label for="age">Age</label><input type="number" name="age" id="age" min="1" max="999" step="1" required>
+      <div class="div">
+        <label for="name">Real Name </label><input class="outline" type="text" name="name" size="17" id="name" placeholder="Superhero real name" required autofocus>
+        <label for="alias">Superhero Name </label><input class="outline" type="text" name="alias" size="17" id="alias" placeholder="Superhero alias" required>
+        <label for="age">Age </label><input class="outline" type="number" name="age" min="1" max="999" step="1" id="age" required>
       </div>
-      <div>
-        <label for="about">About</label><textarea name="about" rows="5" cols="70" maxlength="500" id="about" placeholder="Information about the superhero, max 500 symbols" required></textarea>
+      <div class="div">
+        <label for="about">About </label><textarea class="outline" name="about" rows="5" cols="54" maxlength="500" id="about" placeholder="Information about the superhero, max 500 symbols"></textarea>
       </div>
-      <div>
-        <label for="photo">Photo:</label><input type="file" name="photo" accept="/*" multiple>
+      <div class="div">
+        <label for="photo">Photo: </label><input type="file" name="photo" accept="image/*" id="photo">
       </div>
     </fieldset>
+    <fieldset>
+      <legend>Powers</legend>
+      <div class="div">
+        <input type="checkbox" name="telekinesis" id="telekinesis"><label for="telekinesis"> Telekinesis</label>
+        <input type="checkbox" name="strengthspeed" id="strengthspeed"><label for="strengthspeed"> Super strength or speed</label>
+        <input type="checkbox" name="shapeshifting" id="shapeshifting"><label for="shapeshifting"> Shapeshifting</label>
+        <input type="checkbox" name="flight" id="flight"><label for="flight"> Flight</label>
+        <input type="checkbox" name="control" id="control"><label for="control"> Elemental control</label>
+        <input type="checkbox" name="other" id="other" checked><label for="other"> Other</label>
+      </div>
+      <div class="div">
+        Level of control: <input type="range" name="controllevel" min="0" max="10" step="1" value="1">
+        <output name="controloutput">1</output>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Origin of Powers</legend>
+      <div class="div">
+        <input type="radio" name="powersorigin" value="unknown" id="unknown"><label for="unknown"> Unknown</label>
+        <input type="radio" name="powersorigin" value="labaccident" id="labaccident"><label for="labaccident"> Freak lab accident</label>
+        <input type="radio" name="powersorigin" value="ancientchoise" id="ancientchoise"><label for="ancientchoise"> Chosen by an ancient wise being</label>
+        <input type="radio" name="powersorigin" value="not-human" id="not-human"><label for="not-human"> The superhero is not human</label>
+        <input type="radio" name="powersorigin" value="other" id="other-2" checked><label for="other-2"> Other</label>
+      </div>
+    </fieldset>
+    <div class="div">
+      <button type="reset">CLEAR</button>
+      <button type="send">SEND</button>
+    </div>
   </form>
 </body>
 
