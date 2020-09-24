@@ -1,0 +1,42 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a[href*='://www.'] {
+  color: green;
+}
+
+a[target='_blank']::after {
+  color: coral;
+  content: ' \21D2';
+}
+
+a[href^='https://']::before {
+  content: '\00BB';
+  padding-right: 1rem;
+}
+
+a[href^='http://']::before {
+  color: red;
+  content: '\00D7';
+  padding-right: 1rem;
+}
+
+a[href$='/a']:hover::after {
+  color: coral;
+  content: " \2026  last symbol is 'a'";
+  font-style: italic;
+}
