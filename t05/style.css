@@ -31,7 +31,7 @@ body {
 .card-2,
 .card-3,
 .card-4 {
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   height: 16rem;
   margin-top: 5.5rem;
   padding-right: 1rem;
@@ -79,7 +79,7 @@ body {
 }
 
 .h2 {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.9rem;
+  color: rgba(255, 255, 255, .5);
+  font-size: .9rem;
   margin-top: 0;
 }
