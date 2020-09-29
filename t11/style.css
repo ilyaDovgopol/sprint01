@@ -25,6 +25,7 @@ body {
 
 .li {
   height: 16.5rem;
+  margin-top: 1rem;
   position: relative;
   text-align: center;
   width: 12rem;
