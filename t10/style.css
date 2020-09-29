@@ -20,23 +20,29 @@ a[href*='://www.'] {
 }
 
 a[target='_blank']::after {
-  color: coral;
   content: ' \21D2';
+}
+
+a[target='_blank']::after,
+a[href$='/a']:hover::after {
+  color: coral;
 }
 
 a[href^='https://']::before {
   content: '\00BB';
+}
+
+a[href^='https://']::before,
+a[href^='http://']::before {
   padding-right: 1rem;
 }
 
 a[href^='http://']::before {
   color: red;
   content: '\00D7';
-  padding-right: 1rem;
 }
 
 a[href$='/a']:hover::after {
-  color: coral;
   content: " \2026  last symbol is 'a'";
   font-style: italic;
 }

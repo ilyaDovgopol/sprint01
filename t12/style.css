@@ -1,0 +1,50 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.box {
+  background: rgba(0, 0, 0, .1);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  padding: 2rem;
+  position: relative;
+  width: calc(100vw - 15.1vw);
+}
+
+.box::before {
+  border-left: .1rem solid black;
+  border-right: .1rem solid black;
+  height: calc(100% + 5rem);
+  left: 0;
+  top: -2.5rem;
+  width: 100%;
+}
+
+.box::before,
+.box::after {
+  content: '';
+  position: absolute;
+}
+
+.box::after {
+  border-bottom: .1rem solid black;
+  border-top: .1rem solid black;
+  height: 100%;
+  left: -2.5rem;
+  top: 0;
+  width: calc(100% + 5rem);
+}
