@@ -15,6 +15,15 @@ body {
   font-size: 1.6rem;
 }
 
+a[href^='https://']::before {
+  content: '\00BB';
+}
+
+a[href^='https://']::before,
+a[href^='http://']::before {
+  padding-right: 1rem;
+}
+
 a[href*='://www.'] {
   color: green;
 }
@@ -28,21 +37,12 @@ a[href$='/a']:hover::after {
   color: coral;
 }
 
-a[href^='https://']::before {
-  content: '\00BB';
-}
-
-a[href^='https://']::before,
-a[href^='http://']::before {
-  padding-right: 1rem;
+a[href$='/a']:hover::after {
+  content: " \2026  last symbol is 'a'";
+  font-style: italic;
 }
 
 a[href^='http://']::before {
   color: red;
   content: '\00D7';
-}
-
-a[href$='/a']:hover::after {
-  content: " \2026  last symbol is 'a'";
-  font-style: italic;
 }

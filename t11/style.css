@@ -39,10 +39,6 @@ body {
   margin-right: .1vw;
 }
 
-.li:hover {
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
-}
-
 .li::before {
   background: green;
   color: white;
@@ -56,9 +52,8 @@ body {
   width: 100%;
 }
 
-.li::after {
-  bottom: 0;
-  font: 400 2em lato, sans-serif;
+.li:first-child::before {
+  content: '01.09';
 }
 
 .li:first-child {
@@ -66,12 +61,21 @@ body {
   background-size: var(--background-size);
 }
 
-.li:first-child::before {
-  content: '01.09';
+.li::after {
+  bottom: 0;
+  font: 400 2em lato, sans-serif;
 }
 
 .li:first-child::after {
   content: '+25°';
+}
+
+.li:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+}
+
+.li:nth-child(2)::before {
+  content: '02.09';
 }
 
 .li:nth-child(2) {
@@ -79,12 +83,12 @@ body {
   background-size: var(--background-size);
 }
 
-.li:nth-child(2)::before {
-  content: '02.09';
-}
-
 .li:nth-child(2)::after {
   content: '+23°';
+}
+
+.li:nth-child(3)::before {
+  content: '03.09';
 }
 
 .li:nth-child(3) {
@@ -92,12 +96,12 @@ body {
   background-size: var(--background-size);
 }
 
-.li:nth-child(3)::before {
-  content: '03.09';
-}
-
 .li:nth-child(3)::after {
   content: '+20°';
+}
+
+.li:nth-child(4)::before {
+  content: '04.09';
 }
 
 .li:nth-child(4) {
@@ -105,12 +109,12 @@ body {
   background-size: var(--background-size);
 }
 
-.li:nth-child(4)::before {
-  content: '04.09';
-}
-
 .li:nth-child(4)::after {
   content: '+18°';
+}
+
+.li:nth-child(5)::before {
+  content: '05.09';
 }
 
 .li:nth-child(5) {
@@ -118,12 +122,12 @@ body {
   background-size: var(--background-size);
 }
 
-.li:nth-child(5)::before {
-  content: '05.09';
-}
-
 .li:nth-child(5)::after {
   content: '+15°';
+}
+
+.li:nth-child(6)::before {
+  content: '06.09';
 }
 
 .li:nth-child(6) {
@@ -131,21 +135,17 @@ body {
   background-size: var(--background-size);
 }
 
-.li:nth-child(6)::before {
-  content: '06.09';
-}
-
 .li:nth-child(6)::after {
   content: '+10°';
+}
+
+.li:nth-child(7)::before {
+  content: '07.09';
 }
 
 .li:nth-child(7) {
   background: url(assets/images/snow.png) no-repeat center;
   background-size: var(--background-size);
-}
-
-.li:nth-child(7)::before {
-  content: '07.09';
 }
 
 .li:nth-child(7)::after {
