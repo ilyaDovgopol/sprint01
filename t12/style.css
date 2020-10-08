@@ -22,7 +22,7 @@ body {
   margin-top: 5rem;
   padding: 2rem;
   position: relative;
-  width: calc(100vw - 15.1vw);
+  width: calc(100vw - 20rem);
 }
 
 .box::before {
