@@ -1,0 +1,67 @@
+:root {
+  --fire-size: 20rem;
+}
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.match {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(var(--fire-size) / 3.5);
+  position: relative;
+}
+
+.match,
+.fire {
+  height: var(--fire-size);
+  width: var(--fire-size);
+}
+
+.fire {
+  background: linear-gradient(-45deg, yellow, red);
+  border-radius: 0 50% 50% 50%;
+  bottom: 0;
+  box-shadow: 0 0 1.5rem rgba(255, 0, 0, 1);
+  left: calc(50% - var(--fire-size) / 2);
+  transform: scale(.9, 1) rotate(45deg);
+}
+
+.fire,
+.top,
+.stick {
+  position: absolute;
+}
+
+.top {
+  background: grey;
+  border-radius: 50%;
+  bottom: -2%;
+  height: calc(var(--fire-size) / 3.5);
+  left: calc(50% - var(--fire-size) / 3.5 / 2);
+  transform: scale(.8, 1);
+  width: calc(var(--fire-size) / 3.5);
+  z-index: 1;
+}
+
+.stick {
+  background: brown;
+  height: calc(var(--fire-size) * 1.4);
+  left: calc(50% - var(--fire-size) / 8 / 2);
+  top: 99%;
+  width: calc(var(--fire-size) / 8);
+}
