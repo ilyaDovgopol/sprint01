@@ -15,7 +15,7 @@ body {
   font-size: 1.6rem;
 }
 
-.image {
+.img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -23,6 +23,6 @@ body {
   transition: all 1s ease-in-out;
 }
 
-.image:hover {
+.img:hover {
   transform: rotate(-30deg);
 }

@@ -1,0 +1,55 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.the-infinity-gauntlet {
+  display: block;
+  width: 20rem;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-left: 0;
+}
+
+.ul:not(:last-of-type) {
+  margin-bottom: 0;
+}
+
+.ul:not(:first-of-type) {
+  margin-top: 0;
+}
+
+.li {
+  width: 8rem;
+}
+
+.img {
+  width: 100%;
+}
+
+.img,
+.the-infinity-gauntlet:hover ~ .ul:nth-of-type(odd) .li:nth-child(odd) .img,
+.the-infinity-gauntlet:hover ~ .ul:nth-of-type(even) .li:nth-child(even) .img {
+  transition: all 1s ease-in-out;
+}
+
+.the-infinity-gauntlet:hover ~ .ul:nth-of-type(odd) .li:nth-child(odd) .img,
+.the-infinity-gauntlet:hover ~ .ul:nth-of-type(even) .li:nth-child(even) .img {
+  opacity: 0;
+}
