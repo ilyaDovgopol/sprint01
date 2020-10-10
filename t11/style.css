@@ -40,7 +40,7 @@ body {
 }
 
 .li::before {
-  background: green;
+  background: #0297b9;
   color: white;
   font: 700 1.5em lato, sans-serif;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .li:nth-child(3) {
-  background: url(assets/images/two-clouds.png) no-repeat center;
+  background: url(assets/images/clouds.png) no-repeat center;
   background-size: var(--background-size);
 }
 

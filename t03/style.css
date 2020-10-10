@@ -20,7 +20,7 @@ body {
 }
 
 .search-input {
-  border: .2rem solid blue;
+  border: .2rem solid #005fcc;
   border-radius: .3rem;
   flex-grow: 1;
   margin-right: 0;

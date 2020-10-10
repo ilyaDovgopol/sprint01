@@ -28,31 +28,31 @@ body {
 }
 
 .tbody-tr:first-child {
-  background: orange;
+  background: #d6933e;
 }
 
 .tbody-tr:nth-child(2) {
-  background: green;
+  background: #038001;
 }
 
 .tbody-tr:nth-child(3) {
-  background: blue;
+  background: #015792;
 }
 
 .tbody-tr:nth-child(4) {
-  background: yellow;
+  background: #ffff03;
 }
 
 .tbody-tr:nth-child(5) {
-  background: red;
+  background: #c12b2f;
 }
 
 .tbody-tr:nth-child(6) {
-  background: purple;
+  background: #8075b7;
 }
 
 .td {
-  border: .2rem solid whitesmoke;
+  border: .2rem solid #ddd;
   padding: 1rem;
 }
 

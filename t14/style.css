@@ -33,10 +33,10 @@ body {
 }
 
 .fire {
-  background: linear-gradient(-45deg, yellow, red);
+  background: linear-gradient(-45deg, #ffb217, #ff0e01);
   border-radius: 0 50% 50% 50%;
   bottom: 0;
-  box-shadow: 0 0 1.5rem rgba(255, 0, 0, 1);
+  box-shadow: 0 0 1.5rem #ff0e01;
   left: calc(50% - var(--fire-size) / 2);
   transform: scale(.9, 1) rotate(45deg);
 }
@@ -48,9 +48,10 @@ body {
 }
 
 .top {
-  background: grey;
+  background: linear-gradient(to top, #4d2610 40%, white 98%);
   border-radius: 50%;
   bottom: -2%;
+  box-shadow: 0 -1rem 1.5rem 1rem white;
   height: calc(var(--fire-size) / 3.5);
   left: calc(50% - var(--fire-size) / 3.5 / 2);
   transform: scale(.8, 1);
@@ -59,7 +60,8 @@ body {
 }
 
 .stick {
-  background: brown;
+  background: linear-gradient(to right, #8c4815, #f1a261);
+  border: .1rem solid #cd8888;
   height: calc(var(--fire-size) * 1.4);
   left: calc(50% - var(--fire-size) / 8 / 2);
   top: 99%;

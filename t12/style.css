@@ -26,8 +26,8 @@ body {
 }
 
 .box::before {
-  border-left: .1rem solid black;
-  border-right: .1rem solid black;
+  border-left: .1rem solid #6f6f6f;
+  border-right: .1rem solid #6f6f6f;
   height: calc(100% + 5rem);
   left: 0;
   top: -2.5rem;
@@ -41,8 +41,8 @@ body {
 }
 
 .box::after {
-  border-bottom: .1rem solid black;
-  border-top: .1rem solid black;
+  border-bottom: .1rem solid #6f6f6f;
+  border-top: .1rem solid #6f6f6f;
   height: 100%;
   left: -2.5rem;
   top: 0;

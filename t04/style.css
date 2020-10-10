@@ -20,14 +20,14 @@ body {
 }
 
 .japan {
-  border: calc(var(--japan-width) / 152) solid lightgrey;
+  border: calc(var(--japan-width) / 152) solid #ccc;
   height: calc(var(--japan-width) / 1.48);
   position: relative;
   width: var(--japan-width);
 }
 
 .japan::before {
-  background: red;
+  background: #bc002d;
   border-radius: 50%;
   bottom: 0;
   content: '';
