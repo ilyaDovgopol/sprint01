@@ -15,13 +15,12 @@ body {
   font-size: 1.6rem;
 }
 
-a[href^='https://']::before {
-  content: '\00BB';
+a::before {
+  padding-right: 1rem;
 }
 
-a[href^='https://']::before,
-a[href^='http://']::before {
-  padding-right: 1rem;
+a[href^='https://']::before {
+  content: '\00BB';
 }
 
 a[href*='://www.'] {

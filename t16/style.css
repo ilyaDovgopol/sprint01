@@ -1,0 +1,82 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 1.6rem helvetica, sans-serif;
+}
+
+.h1 {
+  background: #ed1d26;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.h1,
+.nav {
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav > .ul {
+  width: 30rem;
+}
+
+.li {
+  background: #d3d3d3;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.ul .ul {
+  display: none;
+  text-align: left;
+}
+
+.li:hover > .ul {
+  display: block;
+}
+
+.li .li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.nav > .ul > .li > .ul > .li:first-child {
+  margin-top: 1.5rem;
+}
+
+.nav > .ul > .li > .ul > .li:last-child {
+  padding-bottom: 0;
+}
+
+.li .li > .ul {
+  left: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.nav > .ul ~ .ul {
+  margin-left: .4rem;
+}

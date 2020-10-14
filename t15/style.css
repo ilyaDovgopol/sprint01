@@ -31,7 +31,7 @@ body {
   margin-bottom: 0;
 }
 
-.ul:not(:first-of-type) {
+.ul ~ .ul {
   margin-top: 0;
 }
 

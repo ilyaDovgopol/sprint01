@@ -35,10 +35,6 @@ body {
   width: 12rem;
 }
 
-.li:not(:last-child) {
-  margin-right: .1vw;
-}
-
 .li::before {
   background: #0297b9;
   color: white;
@@ -72,6 +68,10 @@ body {
 
 .li:hover {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+}
+
+.li ~ .li {
+  margin-left: .1vw;
 }
 
 .li:nth-child(2)::before {
