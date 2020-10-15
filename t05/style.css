@@ -34,6 +34,7 @@ body {
   height: 16rem;
   margin-top: 5.5rem;
   position: relative;
+  transition: all 1s ease-in-out;
   width: 29rem;
 }
 

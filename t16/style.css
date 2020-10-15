@@ -29,7 +29,6 @@ body {
 
 .nav {
   display: flex;
-  font-size: 1.5rem;
   justify-content: center;
 }
 
@@ -44,8 +43,17 @@ body {
 
 .li {
   background: #d3d3d3;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  padding-bottom: 1.6rem;
+  padding-top: 1.6rem;
+}
+
+.nav > .ul > .li {
+  height: 5rem;
+  padding-bottom: 0;
+}
+
+.li:hover {
+  background: #ed1d26;
 }
 
 .ul .ul {
@@ -64,14 +72,15 @@ body {
 }
 
 .nav > .ul > .li > .ul > .li:first-child {
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
 }
 
-.nav > .ul > .li > .ul > .li:last-child {
-  padding-bottom: 0;
+.li .li:hover {
+  color: white;
 }
 
 .li .li > .ul {
+  color: black;
   left: 100%;
   position: absolute;
   top: 0;
