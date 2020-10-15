@@ -16,8 +16,6 @@ body {
 }
 
 .h1 {
-  background: #ed1d26;
-  color: white;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -25,6 +23,17 @@ body {
 .h1,
 .nav {
   text-align: center;
+}
+
+.h1,
+.li:hover {
+  background: #ed1d26;
+}
+
+.h1,
+.li .li:hover,
+.a:hover {
+  color: white;
 }
 
 .nav {
@@ -43,6 +52,10 @@ body {
 
 .li {
   background: #d3d3d3;
+}
+
+.li,
+.a {
   padding-bottom: 1.6rem;
   padding-top: 1.6rem;
 }
@@ -52,38 +65,47 @@ body {
   padding-bottom: 0;
 }
 
-.li:hover {
-  background: #ed1d26;
-}
-
 .ul .ul {
   display: none;
   text-align: left;
 }
 
-.li:hover > .ul {
+.li:hover > .ul,
+.a {
   display: block;
 }
 
 .li .li {
+  position: relative;
+}
+
+.li .li,
+.a {
   padding-left: 1rem;
   padding-right: 1rem;
-  position: relative;
 }
 
 .nav > .ul > .li > .ul > .li:first-child {
   margin-top: 1.6rem;
 }
 
-.li .li:hover {
-  color: white;
-}
-
 .li .li > .ul {
-  color: black;
   left: 100%;
   position: absolute;
   top: 0;
+}
+
+.li .li > .ul,
+.a {
+  color: black;
+}
+
+.li.li-link {
+  padding: 0;
+}
+
+.a {
+  text-decoration: none;
 }
 
 .nav > .ul ~ .ul {
