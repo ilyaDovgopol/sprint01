@@ -32,7 +32,7 @@ body {
 
 .h1,
 .li .li:hover,
-.a:hover {
+.li-link:hover > .a {
   color: white;
 }
 
@@ -62,12 +62,19 @@ body {
 
 .nav > .ul > .li {
   height: 5rem;
-  padding-bottom: 0;
+}
+
+.li:hover {
+  transition: all .2s ease-in-out;
 }
 
 .ul .ul {
   display: none;
   text-align: left;
+}
+
+.nav > .ul > .li > .ul:first-child {
+  margin-top: 1.6rem;
 }
 
 .li:hover > .ul,
@@ -85,17 +92,13 @@ body {
   padding-right: 1rem;
 }
 
-.nav > .ul > .li > .ul > .li:first-child {
-  margin-top: 1.6rem;
-}
-
-.li .li > .ul {
+.ul .ul .ul {
   left: 100%;
   position: absolute;
   top: 0;
 }
 
-.li .li > .ul,
+.ul .ul .ul,
 .a {
   color: black;
 }

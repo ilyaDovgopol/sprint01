@@ -40,13 +40,8 @@ body {
 }
 
 .img {
-  width: 100%;
-}
-
-.img,
-.the-infinity-gauntlet:hover ~ .ul:nth-of-type(odd) .li:nth-child(odd) .img,
-.the-infinity-gauntlet:hover ~ .ul:nth-of-type(even) .li:nth-child(even) .img {
   transition: all 1s ease-in-out;
+  width: 100%;
 }
 
 .the-infinity-gauntlet:hover ~ .ul:nth-of-type(odd) .li:nth-child(odd) .img,
