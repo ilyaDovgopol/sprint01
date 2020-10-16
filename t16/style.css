@@ -38,7 +38,8 @@ body {
 
 .nav {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .ul {
@@ -109,8 +110,4 @@ body {
 
 .a {
   text-decoration: none;
-}
-
-.nav > .ul ~ .ul {
-  margin-left: .4rem;
 }
