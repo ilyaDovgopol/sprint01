@@ -1,0 +1,59 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.h1,
+.h2 {
+  text-align: center;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+.block {
+  border: .1rem solid #ddd;
+  padding: 1rem;
+  width: 28rem;
+}
+
+.block_description {
+  margin-top: 0;
+}
+
+.block_code-example {
+  font-size: 1.2rem;
+}
+
+.block_view-example-div {
+  border: .1rem solid grey;
+  color: blue;
+}
+
+.block_view-example-div,
+.block_view-example-title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.block_view-example-title {
+  font-size: 3.3rem;
+  font-weight: bold;
+}
