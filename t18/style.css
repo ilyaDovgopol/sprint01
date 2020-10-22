@@ -1,0 +1,38 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+}
+
+.search-input {
+  flex-grow: 1;
+  margin-right: 0;
+  outline: 0;
+}
+
+.search-input {
+  height: 2em;
+}
+
+.submit-button {
+  margin-left: 0;
+}
