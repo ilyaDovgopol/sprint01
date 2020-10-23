@@ -15,6 +15,10 @@ body {
   font: 1.6rem verdana, sans-serif;
 }
 
+.container {
+  user-select: none;
+}
+
 .container,
 .cards-block {
   display: flex;

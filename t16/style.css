@@ -39,7 +39,8 @@ body {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  user-select: none;
 }
 
 .ul {
@@ -48,6 +49,8 @@ body {
 }
 
 .nav > .ul {
+  margin-left: .2rem;
+  margin-right: .2rem;
   width: 30rem;
 }
 
