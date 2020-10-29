@@ -12,7 +12,7 @@
 <body>
   <form class="form" action="#" method="post" target="top">
     <h1 class="h1">Superhero request form</h1>
-    <legend class="legend">What do you need help with?</legend>
+    <h2 class="h2">What do you need help with?</h2>
   	<div class="block-1">
       <input class="checkbox" type="checkbox" name="defeat" id="defeat"><label class="label" for="defeat">DEFEAT A VILLAIN</label>
       <input class="checkbox" type="checkbox" name="save" id="save"><label class="label" for="save">SAVE A CIVILIAN</label>
@@ -24,6 +24,16 @@
     </div>
     <div class="block-3">
       <input class="checkbox" type="checkbox" name="other" id="other"><label class="label" for="other">OTHER STUFF</label>
+    </div>
+    <div class="block-4">
+      <input class="job-details" type="text" name="job-details" placeholder="Job details">
+    </div>
+    <div class="block-5">
+      <input class="name" type="text" name="name" placeholder="Name" required>
+      <input class="email" type="email" name="email" placeholder="Email" required>
+    </div>
+    <div class="block-6">
+      <button class="submit-button" type="submit">SEND</button>
     </div>
   </form>
 </body>

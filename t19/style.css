@@ -15,22 +15,35 @@ body {
   font: 1.6rem 'source sans pro', sans-serif;
 }
 
+.form {
+  margin-left: auto;
+  max-width: 88rem;
+}
+
+.form,
+.name {
+  margin-right: auto;
+}
+
 .h1 {
   color: #f76b87;
 }
 
-.form {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 88rem;
-}
-
-.legend {
-  color: #808080;
+.h2 {
   font-size: 3.2rem;
-  font-weight: bold;
+  margin-bottom: 0;
   margin-top: 4.5rem;
   text-align: center;
+}
+
+.h2,
+.label {
+  color: grey;
+}
+
+.h2,
+.submit-button {
+  font-weight: bold;
 }
 
 .block-1 {
@@ -39,10 +52,19 @@ body {
 }
 
 .block-1,
+.label,
+.block-2,
+.block-3,
+.block-5 {
+  display: flex;
+}
+
+.block-1,
 .block-2,
 .block-3 {
-  display: flex;
   flex-wrap: wrap;
+  -moz-user-select: none;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -52,25 +74,47 @@ body {
 
 .label {
   align-items: center;
-  border: .1rem solid #808080;
+  border: .1rem solid grey;
   border-radius: 3.2rem;
-  color: #808080;
-  display: flex;
-  font-size: 2.1rem;
-  height: 6.5rem;
-  justify-content: center;
   margin-top: 2.5rem;
   width: 26.5rem;
 }
 
-.label:hover {
+.label,
+.block-2,
+.block-3 {
+  justify-content: center;
+}
+
+.label,
+.job-details,
+.name,
+.email {
+  font-size: 2.1rem;
+}
+
+.label,
+.submit-button {
+  height: 6.5rem;
+}
+
+.label:hover,
+.submit-button:hover {
   cursor: pointer;
 }
 
 .checkbox:checked + .label {
-  background: #1d2953;
-  color: white;
   transition: all .3s ease-in-out;
+}
+
+.checkbox:checked + .label,
+.submit-button {
+  color: white;
+}
+
+.checkbox:checked + .label,
+.submit-button:hover {
+  background: #1d2953;
 }
 
 .checkbox:checked + .label::after {
@@ -79,15 +123,56 @@ body {
   margin-left: 1rem;
 }
 
-.block-2 {
-  justify-content: center;
-}
-
 .block-2 .label {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.block-3 {
-  justify-content: center;
+.block-4 {
+  margin-top: 6rem;
+}
+
+.job-details,
+.name,
+.email,
+.submit-button {
+  outline: 0;
+}
+
+.job-details,
+.name,
+.email {
+  border-bottom: .2rem solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  color: grey;
+  height: 4rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.job-details,
+.submit-button {
+  width: 100%;
+}
+
+.block-5 {
+  margin-top: 3.5rem;
+}
+
+.name,
+.email {
+  width: 47%;
+}
+
+.block-6 {
+  margin-top: 4rem;
+}
+
+.submit-button {
+  background: #f76b87;
+  border: 0;
+  font-size: 1.5rem;
+  transition: all 1s ease-in-out;
 }
