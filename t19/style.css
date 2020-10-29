@@ -47,7 +47,7 @@ body {
 }
 
 .block-1 {
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 1.5rem;
 }
 
@@ -96,6 +96,11 @@ body {
 .label,
 .submit-button {
   height: 6.5rem;
+}
+
+.block-1 .label {
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
 }
 
 .label:hover,

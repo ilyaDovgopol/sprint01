@@ -29,6 +29,8 @@ body {
 
 .li {
   height: 16.5rem;
+  margin-left: .2rem;
+  margin-right: .2rem;
   margin-top: 1rem;
   position: relative;
   text-align: center;
@@ -70,10 +72,6 @@ body {
 .li:hover {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
   transition: none;
-}
-
-.li ~ .li {
-  margin-left: .1vw;
 }
 
 .li:nth-child(2)::before {
