@@ -109,7 +109,7 @@ body {
 }
 
 .checkbox:checked + .label {
-  transition: all .3s ease-in-out;
+  transition: background-color .3s, color .3s ease-in-out;
 }
 
 .checkbox:checked + .label,
@@ -179,5 +179,5 @@ body {
   background: #f76b87;
   border: 0;
   font-size: 1.5rem;
-  transition: all 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
 }

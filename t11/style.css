@@ -34,7 +34,7 @@ body {
   margin-top: 1rem;
   position: relative;
   text-align: center;
-  transition: all 1s ease-in-out;
+  transition: background 1s, box-shadow 1s, margin-top 1s ease-in-out;
   width: 12rem;
 }
 

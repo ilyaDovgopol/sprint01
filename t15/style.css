@@ -40,7 +40,7 @@ body {
 }
 
 .img {
-  transition: all 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
   width: 100%;
 }
 

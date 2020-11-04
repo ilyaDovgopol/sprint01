@@ -42,7 +42,7 @@ body {
   margin-right: 2rem;
   margin-top: 5.5rem;
   position: relative;
-  transition: all 1s ease-in-out;
+  transition: margin-top 1s ease-in-out;
   width: 29rem;
 }
 
