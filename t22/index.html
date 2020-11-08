@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+  <meta name="description" content="t22. Settings">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="h1">Settings</h1>
+  <form class="form" action="#" method="post" target="top">
+  	<div class="container">
+  	  <div class="block-1">
+        <div class="block">
+          <p><label class="label" for="typeface">Typeface</label></p>
+          <select class="select" name="typeface" id="typeface">
+            <option value="1" selected>Acunim Pro</option>
+            <option value="2">Comic Sans</option>
+            <option value="3" disabled>Times New Roman</option>
+          </select>
+        </div>
+        <div class="block">
+          <p>Weight</p>
+          <div class="radio-block">
+            <input class="radio-input" type="radio" name="weight" value="regular" id="regular" checked><label class="label radio-label" for="regular"> Regular</label>
+            <input class="radio-input" type="radio" name="weight" value="bold" id="bold"><label class="label radio-label" for="bold"> Bold</label>
+          </div>
+        </div>
+        <div class="block">
+          <p>Size</p>
+          <input class="range-input" type="range" name="adjustment" min="0" max="10" step="1" value="4">
+        </div>
+      </div>
+      <div class="block-2">
+        <div class="block toggle-block">
+          <input class="checkbox" type="checkbox" name="toggle" id="toggle">
+          <label class="label toggle" for="toggle">Dark UI</label>
+        </div>
+        <div class="block">
+          <p>Color</p>
+          <input class="checkbox" type="checkbox" name="blue" id="blue">
+          <label class="label color-checkbox" for="blue"></label>
+          <input class="checkbox" type="checkbox" name="green" id="green">
+          <label class="label color-checkbox" for="green"></label>
+          <input class="checkbox" type="checkbox" name="pink" id="pink">
+          <label class="label color-checkbox" for="pink"></label>
+          <input class="checkbox" type="checkbox" name="yellow" id="yellow">
+          <label class="label color-checkbox" for="yellow"></label>
+          <input class="checkbox" type="checkbox" name="orange" id="orange">
+          <label class="label color-checkbox" for="orange"></label>
+        </div>
+      </div>
+    </div>
+    <div class="div">qwerty</div>
+  </form>
+</body>
+
+</html>

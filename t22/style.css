@@ -1,0 +1,246 @@
+:root {
+  --toggle-after-size: 2.7rem;
+  --toggle-before-height: 3.5rem;
+  --toggle-before-width: 6.5rem;
+}
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.h1 {
+  color: #3e4752;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form {
+  background: #3e4752;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75rem;
+  padding: 2.5rem 1rem;
+}
+
+.container {
+  background: #46525f;
+  border: .1rem solid #7f7f7f;
+  color: lightgrey;
+  display: flex;
+  font-family: 'source sans pro', sans-serif;
+  justify-content: space-around;
+  padding-bottom: 6.5rem;
+  padding-top: 2.5rem;
+  width: 90%;
+}
+
+.block-1,
+.block-2 {
+  width: 40%;
+}
+
+.block {
+  margin-bottom: 4rem;
+}
+
+.label:hover {
+  cursor: pointer;
+}
+
+.select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #313a43 url(assets/images/arrow.png) no-repeat 95%;
+  background-size: 3rem;
+  border: .1rem solid lightgrey;
+  border-radius: .2rem;
+  color: lightgrey;
+  padding: 1rem;
+  width: 90%;
+}
+
+.select:hover {
+  cursor: pointer;
+}
+
+.select:focus {
+  border: .1rem solid #0f6dde;
+  box-shadow: 0 0 .3rem .1rem #0f6dde;
+  outline: 0;
+}
+
+.radio-block {
+  align-items: center;
+  display: flex;
+  font-family: 'times new roman', sans-serif;
+}
+
+.radio-input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #313a43;
+  border: .1rem solid lightgrey;
+  display: flex;
+  height: 1.7rem;
+  justify-content: center;
+  margin-left: .2rem;
+  position: relative;
+  width: 1.7rem;
+}
+
+.radio-input:hover {
+  cursor: pointer;
+}
+
+.radio-input:focus {
+  outline: 0;
+}
+
+.radio-input:checked::before {
+  bottom: -.2rem;
+  color: #37bca4;
+  content: '✓';
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+.radio-label {
+  margin-left: 1.5rem;
+  margin-right: .8rem;
+}
+
+.range-input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #313a43;
+  font-family: 'times new roman', sans-serif;
+  height: .2rem;
+  margin-left: 0;
+  margin-top: 2rem;
+  position: relative;
+  width: 80%;
+}
+
+.range-input:hover {
+  cursor: pointer;
+}
+
+.range-input:focus {
+  outline: 0;
+}
+
+.range-input::-webkit-slider-thumb {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #37bca4;
+  border-radius: 50%;
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+.range-input::-moz-range-thumb {
+  background: #37bca4;
+  border-radius: 50%;
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+.range-input::before {
+  color: white;
+  content: 'A';
+  font-size: 1.5rem;
+  position: absolute;
+  top: 2.5rem;
+}
+
+.range-input::after {
+  color: white;
+  content: 'A';
+  font-size: 2.5rem;
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+}
+
+.block-2 {
+  align-self: center;
+  height: 65%;
+}
+
+.toggle-block {
+  position: relative;
+}
+
+.checkbox {
+  display: none;
+}
+
+.toggle {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.toggle::before {
+  background: #313a43;
+  border-radius: 1.7rem;
+  content: '';
+  height: var(--toggle-before-height);
+  position: absolute;
+  right: 0;
+  top: calc(0% - (var(--toggle-before-height) - 100%) / 2);
+  transition: background-color .3s;
+  width: var(--toggle-before-width);
+}
+
+.toggle::after {
+  background: #37bca4;
+  border-radius: 50%;
+  content: '';
+  height: var(--toggle-after-size);
+  position: absolute;
+  right: calc(var(--toggle-before-width) - var(--toggle-after-size) - .4rem);
+  top: calc(0% - (var(--toggle-after-size) - 100%) / 2);
+  transition: right .3s;
+  width: var(--toggle-after-size);
+}
+
+.checkbox:checked + .toggle::before {
+  background: #2096f3;
+}
+
+.checkbox:checked + .toggle::after {
+  right: .4rem;
+}
+
+.color-checkbox {
+  background: blue;
+  border: .1rem solid lightgrey;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+
+.div {
+  align-self: center;
+  background: green;
+  width: 10%;
+}

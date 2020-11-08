@@ -38,10 +38,6 @@ body {
 
 @keyframes slidein {
 
-  from {
-    margin-left: 0;
-  }
-
   to {
     margin-left: calc(100% - var(--circle-size));
   }
