@@ -11,12 +11,12 @@
 
 <body>
   <h1 class="h1">Settings</h1>
-  <form class="form" action="#" method="post" target="top">
+  <form class="application-settings-form" action="#" method="post" target="top">
   	<div class="container">
   	  <div class="block-1">
         <div class="block">
-          <p><label class="label" for="typeface">Typeface</label></p>
-          <select class="select" name="typeface" id="typeface">
+          <p><label class="label typeface-title" for="typeface">Typeface</label></p>
+          <select class="typeface" name="typeface" id="typeface">
             <option value="1" selected>Acunim Pro</option>
             <option value="2">Comic Sans</option>
             <option value="3" disabled>Times New Roman</option>
@@ -24,37 +24,44 @@
         </div>
         <div class="block">
           <p>Weight</p>
-          <div class="radio-block">
-            <input class="radio-input" type="radio" name="weight" value="regular" id="regular" checked><label class="label radio-label" for="regular"> Regular</label>
-            <input class="radio-input" type="radio" name="weight" value="bold" id="bold"><label class="label radio-label" for="bold"> Bold</label>
+          <div class="font-weight-block">
+            <input class="font-weight" type="radio" name="font-weight" value="regular" id="regular" checked><label class="label font-weight-title" for="regular"> Regular</label>
+            <input class="font-weight" type="radio" name="font-weight" value="bold" id="bold"><label class="label font-weight-title" for="bold"> Bold</label>
           </div>
         </div>
         <div class="block">
           <p>Size</p>
-          <input class="range-input" type="range" name="adjustment" min="0" max="10" step="1" value="4">
+          <input class="font-size" type="range" name="font-size" min="0" max="10" step="1" value="4">
         </div>
       </div>
       <div class="block-2">
-        <div class="block toggle-block">
-          <input class="checkbox" type="checkbox" name="toggle" id="toggle">
-          <label class="label toggle" for="toggle">Dark UI</label>
+        <div class="block visuals-block">
+          <input class="checkbox" type="checkbox" name="dark-ui" id="dark-ui">
+          <label class="label visuals" for="dark-ui">Dark UI</label>
         </div>
         <div class="block">
           <p>Color</p>
-          <input class="checkbox" type="checkbox" name="blue" id="blue">
-          <label class="label color-checkbox" for="blue"></label>
-          <input class="checkbox" type="checkbox" name="green" id="green">
-          <label class="label color-checkbox" for="green"></label>
-          <input class="checkbox" type="checkbox" name="pink" id="pink">
-          <label class="label color-checkbox" for="pink"></label>
-          <input class="checkbox" type="checkbox" name="yellow" id="yellow">
-          <label class="label color-checkbox" for="yellow"></label>
-          <input class="checkbox" type="checkbox" name="orange" id="orange">
-          <label class="label color-checkbox" for="orange"></label>
+          <div class="color-picker-block">
+            <input class="checkbox" type="checkbox" name="blue" id="blue">
+            <label class="label color-pick" for="blue"></label>
+            <input class="checkbox" type="checkbox" name="green" id="green" checked>
+            <label class="label color-pick" for="green"></label>
+            <input class="checkbox" type="checkbox" name="pink" id="pink">
+            <label class="label color-pick" for="pink"></label>
+            <input class="checkbox" type="checkbox" name="yellow" id="yellow">
+            <label class="label color-pick" for="yellow"></label>
+            <input class="checkbox" type="checkbox" name="orange" id="orange" checked>
+            <label class="label color-pick" for="orange"></label>
+          </div>
         </div>
       </div>
     </div>
-    <div class="div">qwerty</div>
+    <aside class="side-menu">
+      <img class="img" src="assets/images/artistic-brush.png" alt="Artistic brush">
+      <img class="img" src="assets/images/user-icon.png" alt="User icon">
+      <img class="img" src="assets/images/sms-speech-bubble.png" alt="SMS speech bubble">
+      <img class="img" src="assets/images/computer-screen.png" alt="Computer screen">
+    </aside>
   </form>
 </body>
 
