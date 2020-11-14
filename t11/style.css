@@ -19,135 +19,134 @@ body {
   font-size: 1.6rem;
 }
 
-.ul {
+.week-weather-forecast {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   justify-content: space-evenly;
   list-style: none;
   padding-left: 0;
 }
 
-.li {
+.week-weather-forecast__week-day {
   height: 16.5rem;
   margin-left: .2rem;
   margin-right: .2rem;
   margin-top: 1rem;
   position: relative;
-  text-align: center;
   transition: background 1s, box-shadow 1s, margin-top 1s ease-in-out;
   width: 12rem;
 }
 
-.li::before {
+.week-weather-forecast__week-day::before {
   background: #0297b9;
   color: white;
   font: 700 1.5em lato, sans-serif;
 }
 
-.li::before,
-.li::after {
-  left: 0;
+.week-weather-forecast__week-day::before,
+.week-weather-forecast__week-day::after {
   position: absolute;
+  text-align: center;
   width: 100%;
 }
 
-.li:first-child::before {
+.week-weather-forecast__week-day:first-child::before {
   content: '01.09';
 }
 
-.li:first-child {
+.week-weather-forecast__week-day:first-child {
   background: url(assets/images/sun.png) no-repeat center;
   background-size: var(--background-size);
 }
 
-.li::after {
+.week-weather-forecast__week-day::after {
   bottom: 0;
   font: 400 2em lato, sans-serif;
 }
 
-.li:first-child::after {
+.week-weather-forecast__week-day:first-child::after {
   content: '+25°';
 }
 
-.li:hover {
+.week-weather-forecast__week-day:hover {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
   transition: none;
 }
 
-.li:nth-child(2)::before {
+.week-weather-forecast__week-day:nth-child(2)::before {
   content: '02.09';
 }
 
-.li:nth-child(2) {
+.week-weather-forecast__week-day:nth-child(2) {
   background: url(assets/images/sun-cloud.png) no-repeat center;
   background-size: var(--background-size);
 }
 
-.li:nth-child(2)::after {
+.week-weather-forecast__week-day:nth-child(2)::after {
   content: '+23°';
 }
 
-.li:nth-child(3)::before {
+.week-weather-forecast__week-day:nth-child(3)::before {
   content: '03.09';
 }
 
-.li:nth-child(3) {
+.week-weather-forecast__week-day:nth-child(3) {
   background: url(assets/images/clouds.png) no-repeat center;
   background-size: var(--background-size);
 }
 
-.li:nth-child(3)::after {
+.week-weather-forecast__week-day:nth-child(3)::after {
   content: '+20°';
 }
 
-.li:nth-child(4)::before {
+.week-weather-forecast__week-day:nth-child(4)::before {
   content: '04.09';
 }
 
-.li:nth-child(4) {
+.week-weather-forecast__week-day:nth-child(4) {
   background: url(assets/images/co2.png) no-repeat center;
   background-size: var(--background-size);
 }
 
-.li:nth-child(4)::after {
+.week-weather-forecast__week-day:nth-child(4)::after {
   content: '+18°';
 }
 
-.li:nth-child(5)::before {
+.week-weather-forecast__week-day:nth-child(5)::before {
   content: '05.09';
 }
 
-.li:nth-child(5) {
+.week-weather-forecast__week-day:nth-child(5) {
   background: url(assets/images/rain.png) no-repeat center;
   background-size: var(--background-size);
 }
 
-.li:nth-child(5)::after {
+.week-weather-forecast__week-day:nth-child(5)::after {
   content: '+15°';
 }
 
-.li:nth-child(6)::before {
+.week-weather-forecast__week-day:nth-child(6)::before {
   content: '06.09';
 }
 
-.li:nth-child(6) {
+.week-weather-forecast__week-day:nth-child(6) {
   background: url(assets/images/lighting.png) no-repeat center;
   background-size: var(--background-size);
 }
 
-.li:nth-child(6)::after {
+.week-weather-forecast__week-day:nth-child(6)::after {
   content: '+10°';
 }
 
-.li:nth-child(7)::before {
+.week-weather-forecast__week-day:nth-child(7)::before {
   content: '07.09';
 }
 
-.li:nth-child(7) {
+.week-weather-forecast__week-day:nth-child(7) {
   background: url(assets/images/snow.png) no-repeat center;
   background-size: var(--background-size);
 }
 
-.li:nth-child(7)::after {
+.week-weather-forecast__week-day:nth-child(7)::after {
   content: '+5°';
 }

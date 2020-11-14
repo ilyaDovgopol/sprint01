@@ -10,24 +10,24 @@
 
 <body>
   <h1>Superhero Form</h1>
-  <form class="form" action="#" method="post" target="top" enctype="multipart/form-data" oninput="controloutput.value=controllevel.value">
+  <form class="superhero-application-form" action="#" method="post" target="top" enctype="multipart/form-data" oninput="controloutput.value=controllevel.value">
     <fieldset>
       <legend>About the Superhero</legend>
-      <div class="div">
-        <label for="name">Real Name </label><input class="outline" type="text" name="name" size="17" id="name" placeholder="Superhero real name" required autofocus>
-        <label for="alias">Superhero Name </label><input class="outline" type="text" name="alias" size="17" id="alias" placeholder="Superhero alias" required>
-        <label for="age">Age </label><input class="outline" type="number" name="age" min="1" max="999" step="1" id="age" required>
+      <div class="superhero-application-form__information-block">
+        <label for="real-name">Real Name </label><input class="superhero-application-form__data-filed" type="text" name="real-name" size="17" id="real-name" placeholder="Superhero real name" required autofocus>
+        <label for="alias">Superhero Name </label><input class="superhero-application-form__data-filed" type="text" name="alias" size="17" id="alias" placeholder="Superhero alias" required>
+        <label for="age">Age </label><input class="superhero-application-form__data-filed" type="number" name="age" min="1" max="999" step="1" id="age" required>
       </div>
-      <div class="div">
-        <label for="about">About </label><textarea class="outline" name="about" rows="5" cols="54" maxlength="500" id="about" placeholder="Information about the superhero, max 500 symbols"></textarea>
+      <div class="superhero-application-form__information-block">
+        <label for="about">About </label><textarea class="superhero-application-form__data-filed" name="about" rows="5" cols="54" maxlength="500" id="about" placeholder="Information about the superhero, max 500 symbols"></textarea>
       </div>
-      <div class="div">
+      <div class="superhero-application-form__information-block">
         <label for="photo">Photo: </label><input type="file" name="photo" accept="image/*" id="photo">
       </div>
     </fieldset>
     <fieldset>
       <legend>Powers</legend>
-      <div class="div checkboxes-block">
+      <div class="superhero-application-form__information-block superhero-application-form__information-block_user-select-none">
         <input type="checkbox" name="telekinesis" id="telekinesis"><label for="telekinesis"> Telekinesis</label>
         <input type="checkbox" name="strengthspeed" id="strengthspeed"><label for="strengthspeed"> Super strength or speed</label>
         <input type="checkbox" name="shapeshifting" id="shapeshifting"><label for="shapeshifting"> Shapeshifting</label>
@@ -35,22 +35,22 @@
         <input type="checkbox" name="control" id="control"><label for="control"> Elemental control</label>
         <input type="checkbox" name="other" id="other" checked><label for="other"> Other</label>
       </div>
-      <div class="div">
+      <div class="superhero-application-form__information-block">
         Level of control: <input type="range" name="controllevel" min="0" max="10" step="1" value="1">
         <output name="controloutput">1</output>
       </div>
     </fieldset>
     <fieldset>
       <legend>Origin of Powers</legend>
-      <div class="div">
+      <div class="superhero-application-form__information-block">
         <input type="radio" name="powersorigin" value="unknown" id="unknown"><label for="unknown"> Unknown</label>
         <input type="radio" name="powersorigin" value="labaccident" id="labaccident"><label for="labaccident"> Freak lab accident</label>
         <input type="radio" name="powersorigin" value="ancientchoise" id="ancientchoise"><label for="ancientchoise"> Chosen by an ancient wise being</label>
         <input type="radio" name="powersorigin" value="not-human" id="not-human"><label for="not-human"> The superhero is not human</label>
-        <input type="radio" name="powersorigin" value="other" id="other-2" checked><label for="other-2"> Other</label>
+        <input type="radio" name="powersorigin" value="other" id="powersorigin-other" checked><label for="powersorigin-other"> Other</label>
       </div>
     </fieldset>
-    <div class="div">
+    <div class="superhero-application-form__information-block">
       <button type="reset">CLEAR</button>
       <button type="submit">SEND</button>
     </div>

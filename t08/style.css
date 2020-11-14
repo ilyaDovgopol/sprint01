@@ -15,7 +15,7 @@ body {
   font-size: 1.6rem;
 }
 
-.table {
+.superheroes-stats-table {
   background: linear-gradient(to right, #6e0000, antiquewhite);
   border: .4rem solid black;
   border-collapse: collapse;
@@ -24,43 +24,43 @@ body {
   text-align: center;
 }
 
-.thead-tr {
+.superheroes-stats-table__thead-tr {
   background: rgba(110, 0, 0, .4);
   color: #ffe369;
 }
 
-.th {
+.superheroes-stats-table__th {
   padding: 1rem;
 }
 
-.th,
-.td {
+.superheroes-stats-table__th,
+.superheroes-stats-table__td {
   border: .2rem solid rgba(189, 195, 199, .05);
 }
 
-.td {
+.superheroes-stats-table__td {
   padding: .5rem 5rem;
 }
 
-.td:first-child {
+.superheroes-stats-table__td:first-child {
   color: white;
   font-weight: bold;
 }
 
-.tbody-tr:nth-child(even) .td:first-child {
+.superheroes-stats-table__tbody-tr:nth-child(even) .superheroes-stats-table__td:first-child {
   background: rgba(143, 148, 251, .1);
 }
 
-.td ~ .td {
+.superheroes-stats-table__td ~ .superheroes-stats-table__td {
   background: antiquewhite;
   color: midnightblue;
 }
 
-.td.false-100 {
+.superheroes-stats-table__td.superheroes-stats-table__td_false-100 {
   background: darkred;
 }
 
-.td.false-100,
-.a {
+.superheroes-stats-table__td.superheroes-stats-table__td_false-100,
+.superheroes-stats-table__superheroes-link {
   color: white;
 }

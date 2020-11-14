@@ -15,24 +15,21 @@ body {
   font-size: 1.6rem;
 }
 
-.h1 {
+.heading {
   text-align: center;
 }
 
-.form {
+.search-form {
   display: flex;
 }
 
-.search-input {
-  flex-grow: 1;
+.search-form__search-field {
+  flex: 1;
+  height: 2em;
   margin-right: 0;
   outline: 0;
 }
 
-.search-input {
-  height: 2em;
-}
-
-.submit-button {
+.search-form__submit-button {
   margin-left: 0;
 }

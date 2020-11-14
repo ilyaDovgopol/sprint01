@@ -15,7 +15,7 @@ body {
   font-size: 1.6rem;
 }
 
-.form {
+.superhero-application-form {
   border: .2rem solid grey;
   padding: 2rem;
   margin-left: auto;
@@ -23,16 +23,16 @@ body {
   max-width: 100rem;
 }
 
-.div {
+.superhero-application-form__information-block {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
 }
 
-.outline {
+.superhero-application-form__data-filed {
   outline: 0;
 }
 
-.checkboxes-block {
+.superhero-application-form__information-block_user-select-none {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;

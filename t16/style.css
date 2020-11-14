@@ -15,104 +15,104 @@ body {
   font: 1.6rem helvetica, sans-serif;
 }
 
-.h1 {
+.heading {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-.h1,
-.nav {
+.heading,
+.drop-down-menu {
   text-align: center;
 }
 
-.h1,
-.li:hover {
+.heading,
+.drop-down-menu__item:hover {
   background: #ed1d26;
 }
 
-.h1,
-.li .li:hover,
-.li-link:hover > .a {
+.heading,
+.drop-down-menu__item .drop-down-menu__item:hover,
+.drop-down-menu__item_link:hover > .drop-down-menu__link {
   color: white;
 }
 
-.nav {
+.drop-down-menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   justify-content: center;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 
-.ul {
+.drop-down-menu__items-list {
   list-style: none;
   padding-left: 0;
 }
 
-.nav > .ul {
+.drop-down-menu > .drop-down-menu__items-list {
   margin-left: .2rem;
   margin-right: .2rem;
   width: 30rem;
 }
 
-.li {
+.drop-down-menu__item {
   background: #d3d3d3;
 }
 
-.li,
-.a {
+.drop-down-menu__item,
+.drop-down-menu__link {
   padding-bottom: 1.6rem;
   padding-top: 1.6rem;
 }
 
-.nav > .ul > .li {
+.drop-down-menu > .drop-down-menu__items-list > .drop-down-menu__item {
   height: 5rem;
 }
 
-.li:hover {
+.drop-down-menu__item:hover {
   transition: background-color .2s, color .2s ease-in-out;
 }
 
-.ul .ul {
+.drop-down-menu__items-list .drop-down-menu__items-list {
   display: none;
   text-align: left;
 }
 
-.nav > .ul > .li > .ul:first-child {
+.drop-down-menu > .drop-down-menu__items-list > .drop-down-menu__item > .drop-down-menu__items-list:first-child {
   margin-top: 1.6rem;
 }
 
-.li:hover > .ul,
-.a {
+.drop-down-menu__item:hover > .drop-down-menu__items-list,
+.drop-down-menu__link {
   display: block;
 }
 
-.li .li {
+.drop-down-menu__item .drop-down-menu__item {
   position: relative;
 }
 
-.li .li,
-.a {
+.drop-down-menu__item .drop-down-menu__item,
+.drop-down-menu__link {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.ul .ul .ul {
+.drop-down-menu__items-list .drop-down-menu__items-list .drop-down-menu__items-list {
   left: 100%;
   position: absolute;
   top: 0;
 }
 
-.ul .ul .ul,
-.a {
+.drop-down-menu__items-list .drop-down-menu__items-list .drop-down-menu__items-list,
+.drop-down-menu__link {
   color: black;
 }
 
-.li.li-link {
+.drop-down-menu__item.drop-down-menu__item_link {
   padding: 0;
 }
 
-.a {
+.drop-down-menu__link {
   text-decoration: none;
 }

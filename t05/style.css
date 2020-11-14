@@ -15,78 +15,72 @@ body {
   font: 1.6rem verdana, sans-serif;
 }
 
-.container {
+.superheroes-list {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 
-.container,
-.cards-block {
+.superheroes-list,
+.superheroes-list__superheroes-cards-block {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
 }
 
-.cards-block {
-  flex-grow: 1;
+.superheroes-list__superheroes-cards-block {
+  flex: 1;
   justify-content: space-around;
 }
 
-.card-1,
-.card-2,
-.card-3,
-.card-4 {
+.superheroes-list__superhero-card {
   border-radius: .5rem;
   height: 16rem;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 5.5rem;
+  padding: .5rem 1rem;
   position: relative;
   transition: margin-top 1s ease-in-out;
   width: 29rem;
 }
 
-.card-1 {
+.superheroes-list__superhero-card_captain-america-background {
   background: linear-gradient(#4568dc, #b06ab3);
 }
 
-.card-2 {
+.superheroes-list__superhero-card_iron-man-background {
   background: linear-gradient(#e52d27, #b31217);
 }
 
-.card-3 {
+.superheroes-list__superhero-card_black-widow-background {
   background: linear-gradient(to right, #000, #61045f);
 }
 
-.card-4 {
+.superheroes-list__superhero-card_spider-man-background {
   background: linear-gradient(#e52d27, #000);
 }
 
-.img {
+.superheroes-list__superhero-image {
   height: 18.2rem;
-  left: 1rem;
   position: absolute;
 }
 
-.card-1 .img,
-.card-2 .img,
-.card-3 .img {
+.superheroes-list__superhero-image_bottom-0 {
   bottom: 0;
 }
 
-.h1 {
+.superheroes-list__superhero-alias {
   color: white;
   font-size: 1.2rem;
   margin-bottom: 0;
 }
 
-.h1,
-.h2 {
-  margin-right: 1rem;
+.superheroes-list__superhero-alias,
+.superheroes-list__superhero-real-name {
   text-align: right;
 }
 
-.h2 {
+.superheroes-list__superhero-real-name {
   color: rgba(255, 255, 255, .5);
   font-size: .9rem;
   margin-top: 0;

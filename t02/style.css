@@ -15,48 +15,48 @@ body {
   font-size: 1.6rem;
 }
 
-.table {
+.infinity-stones-table {
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.thead-tr {
+.infinity-stones-table__thead-tr {
   background: black;
   color: white;
 }
 
-.tbody-tr:first-child {
+.infinity-stones-table__tbody-tr:first-child {
   background: #d6933e;
 }
 
-.tbody-tr:nth-child(2) {
+.infinity-stones-table__tbody-tr:nth-child(2) {
   background: #038001;
 }
 
-.tbody-tr:nth-child(3) {
+.infinity-stones-table__tbody-tr:nth-child(3) {
   background: #015792;
 }
 
-.tbody-tr:nth-child(4) {
+.infinity-stones-table__tbody-tr:nth-child(4) {
   background: #ffff03;
 }
 
-.tbody-tr:nth-child(5) {
+.infinity-stones-table__tbody-tr:nth-child(5) {
   background: #c12b2f;
 }
 
-.tbody-tr:nth-child(6) {
+.infinity-stones-table__tbody-tr:nth-child(6) {
   background: #8075b7;
 }
 
-.td {
+.infinity-stones-table__td {
   border: .2rem solid #ddd;
   padding: 1rem;
 }
 
-.img {
+.infinity-stones-table__infinity-stone-image {
   border-radius: 2rem;
   height: 12rem;
   width: 12rem;

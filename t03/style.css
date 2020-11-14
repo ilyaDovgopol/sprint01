@@ -15,20 +15,20 @@ body {
   font-size: 1.6rem;
 }
 
-.form {
+.search-form {
   display: flex;
 }
 
-.search-input {
+.search-form__search-field {
   border: .2rem solid #005fcc;
   border-radius: .3rem;
-  flex-grow: 1;
+  flex: 1;
   margin-right: 0;
   outline: 0;
 }
 
-.search-input,
-.submit-button {
+.search-form__search-field,
+.search-form__submit-button {
   color: green;
   font-size: 1.3rem;
   height: 2em;
@@ -36,11 +36,11 @@ body {
   padding-right: 1rem;
 }
 
-.search-input:hover,
-.submit-button:hover {
+.search-form__search-field:hover,
+.search-form__submit-button:hover {
   color: red;
 }
 
-.submit-button {
+.search-form__submit-button {
   margin-left: 0;
 }

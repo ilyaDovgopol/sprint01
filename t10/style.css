@@ -20,7 +20,7 @@ a::before {
 }
 
 a[href^='https://']::before {
-  content: '\00BB';
+  content: '\00bb';
 }
 
 a[href*='://www.'] {
@@ -28,7 +28,7 @@ a[href*='://www.'] {
 }
 
 a[target='_blank']::after {
-  content: ' \21D2';
+  content: ' \21d2';
 }
 
 a[target='_blank']::after,
@@ -43,5 +43,5 @@ a[href$='/a']:hover::after {
 
 a[href^='http://']::before {
   color: red;
-  content: '\00D7';
+  content: '\00d7';
 }

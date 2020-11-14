@@ -15,56 +15,55 @@ body {
   font-size: 16px;
 }
 
-.h1,
-.h2 {
+.handbook-section__section-topic,
+.handbook-section__section-subtopic {
   text-align: center;
 }
 
-.h1,
-.h2,
-.block_description,
-.block_view-example-div {
+.handbook-section__section-topic,
+.handbook-section__section-subtopic,
+.handbook-section__section-block-description,
+.handbook-section__section-block-view-example_div {
   font-size: 1.3rem;
 }
 
-.blocks {
+.handbook-section__section-blocks-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   justify-content: space-around;
   list-style: none;
   padding-left: 0;
 }
 
-.block {
+.handbook-section__section-block {
   border: .1rem solid #ddd;
   padding: .8rem;
   width: 22rem;
 }
 
-.block:nth-child(4) ~ .block {
+.handbook-section__section-block:nth-child(4) ~ .handbook-section__section-block {
   margin-top: 1.2rem;
 }
 
-.block_description {
+.handbook-section__section-block-description {
   margin-top: 0;
 }
 
-.block_description,
-.block_view-example-div,
-.block_view-example-title {
+.handbook-section__section-block-description,
+.handbook-section__section-block-view-example {
   margin-bottom: 0;
 }
 
-.block_code-example {
+.handbook-section__section-block-code-example {
   font-size: 1rem;
 }
 
-.block_view-example-div {
+.handbook-section__section-block-view-example_div {
   border: .1rem solid grey;
   color: blue;
 }
 
-.block_view-example-title {
+.handbook-section__section-block-view-example_title {
   font-size: 2.7rem;
   font-weight: bold;
   margin-top: 1.5rem;
@@ -76,12 +75,12 @@ body {
     font-size: 1.3vw;
   }
 
-  .block {
+  .handbook-section__section-block {
     width: 36.5rem;
   }
 
-  .block:nth-child(3),
-  .block:nth-child(4) {
+  .handbook-section__section-block:nth-child(3),
+  .handbook-section__section-block:nth-child(4) {
     margin-top: 1.2rem;
   }
 
@@ -93,11 +92,11 @@ body {
     font-size: 2.8vw;
   }
 
-  .block {
+  .handbook-section__section-block {
     width: 100%;
   }
 
-  .block:nth-child(2) {
+  .handbook-section__section-block:nth-child(2) {
     margin-top: 1.2rem;
   }
 

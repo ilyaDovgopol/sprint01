@@ -15,36 +15,40 @@ body {
   font-size: 1.6rem;
 }
 
-.the-infinity-gauntlet {
+.the-infinity-gauntlet-image {
   display: block;
   width: 20rem;
 }
 
-.ul {
+.the-infinity-gauntlet-image:hover {
+  cursor: pointer;
+}
+
+.person-shaped-icons-list {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
   padding-left: 0;
 }
 
-.ul:not(:last-of-type) {
+.person-shaped-icons-list:not(:last-of-type) {
   margin-bottom: 0;
 }
 
-.ul ~ .ul {
+.person-shaped-icons-list ~ .person-shaped-icons-list {
   margin-top: 0;
 }
 
-.li {
+.person-shaped-icons-list__person {
   width: 8rem;
 }
 
-.img {
+.person-shaped-icons-list__person-image {
   transition: opacity 1s ease-in-out;
   width: 100%;
 }
 
-.the-infinity-gauntlet:hover ~ .ul:nth-of-type(odd) .li:nth-child(odd) .img,
-.the-infinity-gauntlet:hover ~ .ul:nth-of-type(even) .li:nth-child(even) .img {
+.the-infinity-gauntlet-image:hover ~ .person-shaped-icons-list:nth-of-type(odd) .person-shaped-icons-list__person:nth-child(odd) .person-shaped-icons-list__person-image,
+.the-infinity-gauntlet-image:hover ~ .person-shaped-icons-list:nth-of-type(even) .person-shaped-icons-list__person:nth-child(even) .person-shaped-icons-list__person-image {
   opacity: 0;
 }

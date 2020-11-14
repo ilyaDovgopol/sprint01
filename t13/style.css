@@ -15,7 +15,7 @@ body {
   font-size: 16px;
 }
 
-.img {
+.lorem-ipsum-image {
   border: 1px solid grey;
   float: left;
   margin-bottom: .6rem;
@@ -25,11 +25,9 @@ body {
 
 @media print {
 
-  .img {
-    display: block;
+  .lorem-ipsum-image {
     float: none;
     margin-bottom: 0;
-    margin-right: 0;
     width: 50rem;
   }
 

@@ -56,7 +56,6 @@ body {
   left: calc(50% - var(--fire-size) / 3.5 / 2);
   transform: scale(.8, 1);
   width: calc(var(--fire-size) / 3.5);
-  z-index: 1;
 }
 
 .stick {
@@ -66,4 +65,5 @@ body {
   left: calc(50% - var(--fire-size) / 8 / 2);
   top: 99%;
   width: calc(var(--fire-size) / 8);
+  z-index: -1;
 }
