@@ -44,3 +44,7 @@ body {
 .search-form__submit-button {
   margin-left: 0;
 }
+
+.search-form__submit-button:hover {
+  cursor: pointer;
+}

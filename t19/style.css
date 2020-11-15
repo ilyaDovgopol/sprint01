@@ -12,172 +12,164 @@ html {
 }
 
 body {
-  font: 1.6rem 'source sans pro', sans-serif;
+  font: 1.6rem source sans pro, sans-serif;
 }
 
-.form {
+.superhero-request-form {
   margin-left: auto;
   max-width: 88rem;
 }
 
-.form,
-.name {
+.superhero-request-form,
+.superhero-request-form__name {
   margin-right: auto;
 }
 
-.h1 {
+.superhero-request-form__form-heading {
   color: #f76b87;
+  margin-bottom: 4.5rem;
 }
 
-.h2 {
+.superhero-request-form__form-title {
   font-size: 3.2rem;
-  margin-bottom: 0;
-  margin-top: 4.5rem;
+  margin-bottom: 4rem;
+}
+
+.superhero-request-form__form-title,
+.superhero-request-form__help-needed {
   text-align: center;
 }
 
-.h2,
-.label {
+.superhero-request-form__form-title,
+.superhero-request-form__help-needed,
+.superhero-request-form__job-details,
+.superhero-request-form__name,
+.superhero-request-form__email {
   color: grey;
 }
 
-.h2,
-.submit-button {
+.superhero-request-form__form-title,
+.superhero-request-form__submit-button {
   font-weight: bold;
 }
 
-.block-1 {
+.superhero-request-form__block-1,
+.superhero-request-form__block-2,
+.superhero-request-form__block-3 {
+  flex-flow: wrap;
   justify-content: center;
-  margin-top: 1.5rem;
-}
-
-.block-1,
-.label,
-.block-2,
-.block-3,
-.block-5 {
-  display: flex;
-}
-
-.block-1,
-.block-2,
-.block-3 {
-  flex-wrap: wrap;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 
-.checkbox {
+.superhero-request-form__block-1,
+.superhero-request-form__block-2,
+.superhero-request-form__block-3,
+.superhero-request-form__block-5 {
+  display: flex;
+}
+
+.superhero-request-form__form-checkbox {
   display: none;
 }
 
-.label {
-  align-items: center;
+.superhero-request-form__help-needed {
   border: .1rem solid grey;
-  border-radius: 3.2rem;
-  margin-top: 2.5rem;
+  border-radius: 3.4rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   width: 26.5rem;
 }
 
-.label,
-.block-2,
-.block-3 {
-  justify-content: center;
-}
-
-.label,
-.job-details,
-.name,
-.email {
+.superhero-request-form__help-needed,
+.superhero-request-form__job-details,
+.superhero-request-form__name,
+.superhero-request-form__email {
   font-size: 2.1rem;
 }
 
-.label,
-.submit-button {
-  height: 6.5rem;
-}
-
-.block-1 .label {
+.superhero-request-form__block-1 .superhero-request-form__help-needed {
   margin-left: 1.4rem;
   margin-right: 1.4rem;
 }
 
-.label:hover,
-.submit-button:hover {
+.superhero-request-form__help-needed:hover,
+.superhero-request-form__submit-button:hover {
   cursor: pointer;
 }
 
-.checkbox:checked + .label {
+.superhero-request-form__form-checkbox:checked + .superhero-request-form__help-needed {
   transition: background-color .3s, color .3s ease-in-out;
 }
 
-.checkbox:checked + .label,
-.submit-button {
+.superhero-request-form__form-checkbox:checked + .superhero-request-form__help-needed,
+.superhero-request-form__submit-button {
   color: white;
 }
 
-.checkbox:checked + .label,
-.submit-button:hover {
+.superhero-request-form__form-checkbox:checked + .superhero-request-form__help-needed,
+.superhero-request-form__submit-button:hover {
   background: #1d2953;
 }
 
-.checkbox:checked + .label::after {
+.superhero-request-form__form-checkbox:checked + .superhero-request-form__help-needed::after {
   content: '✓';
   font-style: italic;
   margin-left: 1rem;
 }
 
-.block-2 .label {
+.superhero-request-form__block-2 .superhero-request-form__help-needed {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.block-4 {
+.superhero-request-form__block-4 {
   margin-top: 6rem;
 }
 
-.job-details,
-.name,
-.email,
-.submit-button {
+.superhero-request-form__job-details,
+.superhero-request-form__name,
+.superhero-request-form__email,
+.superhero-request-form__submit-button {
   outline: 0;
 }
 
-.job-details,
-.name,
-.email {
+.superhero-request-form__job-details,
+.superhero-request-form__name,
+.superhero-request-form__email {
   border-bottom: .2rem solid #ddd;
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  color: grey;
   height: 4rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.job-details,
-.submit-button {
+.superhero-request-form__job-details,
+.superhero-request-form__submit-button {
   width: 100%;
 }
 
-.block-5 {
+.superhero-request-form__block-5 {
   margin-top: 3.5rem;
 }
 
-.name,
-.email {
+.superhero-request-form__name,
+.superhero-request-form__email {
   width: 47%;
 }
 
-.block-6 {
+.superhero-request-form__block-6 {
   margin-top: 4rem;
 }
 
-.submit-button {
+.superhero-request-form__submit-button {
   background: #f76b87;
   border: 0;
   font-size: 1.5rem;
+  height: 6.5rem;
   transition: background-color 1s ease-in-out;
 }

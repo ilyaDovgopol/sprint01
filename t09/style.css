@@ -28,6 +28,10 @@ body {
   margin-top: 1.5rem;
 }
 
+.superhero-application-form__cursor-pointer {
+  cursor: pointer;
+}
+
 .superhero-application-form__data-filed {
   outline: 0;
 }
