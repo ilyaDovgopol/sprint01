@@ -101,7 +101,7 @@ body {
 }
 
 .superhero-request-form__form-checkbox:checked + .superhero-request-form__help-needed {
-  transition: background-color .3s, color .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in;
 }
 
 .superhero-request-form__form-checkbox:checked + .superhero-request-form__help-needed,

@@ -245,7 +245,7 @@ body {
   border-radius: 1.7rem;
   height: var(--toggle-before-height);
   top: calc(0% - (var(--toggle-before-height) - 100%) / 2);
-  transition: background-color .3s;
+  transition: background-color .3s ease-out;
   width: var(--toggle-before-width);
 }
 
